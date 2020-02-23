@@ -5,10 +5,21 @@
 
 ```
 curl -X PUT -d '{
-  "alanisawesome": {
-    "name": "Alan Turing",
-    "birthday": "June 23, 1912"
+  "users": [
+      {
+    "name": "Mark",
+    "salary": "100000"
+  },
+  {
+    "name": "Jim",
+    "salary": "200000"
   }
-}' 'https://secondproject-eeef7.firebaseio.com/rest/saving-data/fireblog/users.json'
+  ]
+}' 'https://secondproject-eeef7.firebaseio.com/userdoc.json'
 
+```
+
+**READ Data**
+```
+curl 'https://secondproject-eeef7.firebaseio.com/userdoc.json'
 ```
